@@ -15,10 +15,6 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
-            {/* <div className='ml-15'>WinBings</div>
-            <div>
-
-            </div> */}
         </header>
     )
 }

@@ -1990,7 +1990,9 @@ export default function SocialMediaMessage() {
     }
   }
   return (
-    <div className='max-w-[1240px] mx-auto flex flex-col items-center p-4 h-full justify-center'>
+    <div className='max-w-[1240px] mx-auto flex flex-col items-center p-4 h-full'>
+      <img className='mb-4 w-1/5 box-border' src={whatsappLogo} height={100} width={100} />
+
       <p className='mb-[10px] text-center'>Send a WhatsApp direct without adding to your contact list</p>
       <div className='flex flex-col items-center md:items-start md:flex-row w-full justify-center gap-[10px]'>
         <select id="countryCodeOptions" onChange={(e) => setDialCode(e.target.value)} className="sm:w-[90%] md:max-w-[8%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -2008,7 +2010,7 @@ export default function SocialMediaMessage() {
       </div>
 
       <a href={href}>
-        <img className='mt-[10px] cursor-pointer' src={whatsappLogo} height={`40px`} width={`40px`} onClick={() => { buttonClicked() }} />
+        <button type="button" className="mt-[10px] text-white bg-[#25D366] hover:bg-[#14212b] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick={() => { buttonClicked() }}>Message</button>
       </a>
       <p className='mt-[10px] max-w-[90%] text-center'>
         Just fill in the phone number you want to WhatsApp.
