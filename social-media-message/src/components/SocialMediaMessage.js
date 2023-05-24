@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import whatsappLogo from "../assets/whatsapp-png-logo.png";
 
 export default function SocialMediaMessage() {
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [errMsg, setErrMsg] = useState(false);
   const [href, setHref] = useState();
-  const [dialCode, setDialCode] = useState('+93');
+  const [dialCode, setDialCode] = useState("+93");
 
   useEffect(() => {
-    setDialCode(document.getElementById("countryCodeOptions").value)
-  }, [])
-
+    setDialCode(document.getElementById("countryCodeOptions").value);
+  }, []);
 
   const countryData = [
     {
@@ -19,14 +18,14 @@ export default function SocialMediaMessage() {
       code: `AF`,
       dial_code: `+93`,
       timezone: `GMT+04:30`,
-      flagImg: `flag_af.png`
+      flagImg: `flag_af.png`,
     },
     {
       name: `Åland Islands`,
       currencyCode: `EUR`,
       code: `AX`,
       dial_code: `+358`,
-      timezone: `GMT+02:00`
+      timezone: `GMT+02:00`,
     },
     {
       name: `Albania`,
@@ -34,7 +33,7 @@ export default function SocialMediaMessage() {
       code: `AL`,
       dial_code: `+355`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_al.png`
+      flagImg: `flag_al.png`,
     },
     {
       name: `Algeria`,
@@ -42,7 +41,7 @@ export default function SocialMediaMessage() {
       code: `DZ`,
       dial_code: `+213`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_dz.png`
+      flagImg: `flag_dz.png`,
     },
     {
       name: `American Samoa`,
@@ -50,7 +49,7 @@ export default function SocialMediaMessage() {
       code: `AS`,
       dial_code: `+1684`,
       timezone: `GMT-11:00`,
-      flagImg: `flag_as.png`
+      flagImg: `flag_as.png`,
     },
     {
       name: `Andorra`,
@@ -58,7 +57,7 @@ export default function SocialMediaMessage() {
       code: `AD`,
       dial_code: `+376`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ad.png`
+      flagImg: `flag_ad.png`,
     },
     {
       name: `Angola`,
@@ -66,7 +65,7 @@ export default function SocialMediaMessage() {
       code: `AO`,
       dial_code: `+244`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ao.png`
+      flagImg: `flag_ao.png`,
     },
     {
       name: `Anguilla`,
@@ -74,7 +73,7 @@ export default function SocialMediaMessage() {
       code: `AI`,
       dial_code: `+1264`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_ai.png`
+      flagImg: `flag_ai.png`,
     },
     {
       name: `Antarctica`,
@@ -82,7 +81,7 @@ export default function SocialMediaMessage() {
       code: `AQ`,
       dial_code: `+672`,
       timezone: `GMT-03:00`,
-      flagImg: `flag_aq.png`
+      flagImg: `flag_aq.png`,
     },
     {
       name: `Antigua and Barbuda`,
@@ -90,7 +89,7 @@ export default function SocialMediaMessage() {
       code: `AG`,
       dial_code: `+1268`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_ag.png`
+      flagImg: `flag_ag.png`,
     },
     {
       name: `Argentina`,
@@ -98,7 +97,7 @@ export default function SocialMediaMessage() {
       code: `AR`,
       dial_code: `+54`,
       timezone: `GMT-03:00`,
-      flagImg: `flag_ar.png`
+      flagImg: `flag_ar.png`,
     },
     {
       name: `Armenia`,
@@ -106,7 +105,7 @@ export default function SocialMediaMessage() {
       code: `AM`,
       dial_code: `+374`,
       timezone: `GMT+04:00`,
-      flagImg: `flag_am.png`
+      flagImg: `flag_am.png`,
     },
     {
       name: `Aruba`,
@@ -114,7 +113,7 @@ export default function SocialMediaMessage() {
       code: `AW`,
       dial_code: `+297`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_aw.png`
+      flagImg: `flag_aw.png`,
     },
     {
       name: `Australia`,
@@ -122,7 +121,7 @@ export default function SocialMediaMessage() {
       code: `AU`,
       dial_code: `+61`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_au.png`
+      flagImg: `flag_au.png`,
     },
     {
       name: `Austria`,
@@ -130,7 +129,7 @@ export default function SocialMediaMessage() {
       code: `AT`,
       dial_code: `+43`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_at.png`
+      flagImg: `flag_at.png`,
     },
     {
       name: `Azerbaijan`,
@@ -138,7 +137,7 @@ export default function SocialMediaMessage() {
       code: `AZ`,
       dial_code: `+994`,
       timezone: `GMT+04:00`,
-      flagImg: `flag_az.png`
+      flagImg: `flag_az.png`,
     },
     {
       name: `Bahamas`,
@@ -146,7 +145,7 @@ export default function SocialMediaMessage() {
       code: `BS`,
       dial_code: `+1242`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_bs.png`
+      flagImg: `flag_bs.png`,
     },
     {
       name: `Bahrain`,
@@ -154,7 +153,7 @@ export default function SocialMediaMessage() {
       code: `BH`,
       dial_code: `+973`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_bh.png`
+      flagImg: `flag_bh.png`,
     },
     {
       name: `Bangladesh`,
@@ -162,7 +161,7 @@ export default function SocialMediaMessage() {
       code: `BD`,
       dial_code: `+880`,
       timezone: `GMT+06:00`,
-      flagImg: `flag_bd.png`
+      flagImg: `flag_bd.png`,
     },
     {
       name: `Barbados`,
@@ -170,7 +169,7 @@ export default function SocialMediaMessage() {
       code: `BB`,
       dial_code: `+1246`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_bb.png`
+      flagImg: `flag_bb.png`,
     },
     {
       name: `Belarus`,
@@ -178,7 +177,7 @@ export default function SocialMediaMessage() {
       code: `BY`,
       dial_code: `+375`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_by.png`
+      flagImg: `flag_by.png`,
     },
     {
       name: `Belgium`,
@@ -186,7 +185,7 @@ export default function SocialMediaMessage() {
       code: `BE`,
       dial_code: `+32`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_be.png`
+      flagImg: `flag_be.png`,
     },
     {
       name: `Belize`,
@@ -194,7 +193,7 @@ export default function SocialMediaMessage() {
       code: `BZ`,
       dial_code: `+501`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_bz.png`
+      flagImg: `flag_bz.png`,
     },
     {
       name: `Benin`,
@@ -202,7 +201,7 @@ export default function SocialMediaMessage() {
       code: `BJ`,
       dial_code: `+229`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_bj.png`
+      flagImg: `flag_bj.png`,
     },
     {
       name: `Bermuda`,
@@ -210,7 +209,7 @@ export default function SocialMediaMessage() {
       code: `BM`,
       dial_code: `+1441`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_bm.png`
+      flagImg: `flag_bm.png`,
     },
     {
       name: `Bhutan`,
@@ -218,7 +217,7 @@ export default function SocialMediaMessage() {
       code: `BT`,
       dial_code: `+975`,
       timezone: `GMT+06:00`,
-      flagImg: `flag_bt.png`
+      flagImg: `flag_bt.png`,
     },
     {
       name: `Bolivia (Plurinational State of)`,
@@ -226,14 +225,14 @@ export default function SocialMediaMessage() {
       code: `BO`,
       dial_code: `+591`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_bo.png`
+      flagImg: `flag_bo.png`,
     },
     {
       name: `Bonaire, Sint Eustatius and Saba`,
       currencyCode: `USD`,
       code: `BQ`,
       dial_code: `+5997`,
-      timezone: `GMT-04:00`
+      timezone: `GMT-04:00`,
     },
     {
       name: `Bosnia and Herzegovina`,
@@ -241,7 +240,7 @@ export default function SocialMediaMessage() {
       code: `BA`,
       dial_code: `+387`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ba.png`
+      flagImg: `flag_ba.png`,
     },
     {
       name: `Botswana`,
@@ -249,7 +248,7 @@ export default function SocialMediaMessage() {
       code: `BW`,
       dial_code: `+267`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_bw.png`
+      flagImg: `flag_bw.png`,
     },
     {
       name: `Brazil`,
@@ -257,7 +256,7 @@ export default function SocialMediaMessage() {
       code: `BR`,
       dial_code: `+55`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_br.png`
+      flagImg: `flag_br.png`,
     },
     {
       name: `British Indian Ocean Territory`,
@@ -265,7 +264,7 @@ export default function SocialMediaMessage() {
       code: `IO`,
       dial_code: `+246`,
       timezone: `GMT+06:00`,
-      flagImg: `flag_io.png`
+      flagImg: `flag_io.png`,
     },
     {
       name: `United States Minor Outlying Islands`,
@@ -273,7 +272,7 @@ export default function SocialMediaMessage() {
       code: `UM`,
       dial_code: `+246`,
       timezone: `GMT-11:00`,
-      flagImg: `flag_um.png`
+      flagImg: `flag_um.png`,
     },
     {
       name: `Virgin Islands (British)`,
@@ -281,7 +280,7 @@ export default function SocialMediaMessage() {
       code: `VG`,
       dial_code: `+1284`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_vg.png`
+      flagImg: `flag_vg.png`,
     },
     {
       name: `Virgin Islands (U.S.)`,
@@ -289,7 +288,7 @@ export default function SocialMediaMessage() {
       code: `VI`,
       dial_code: `+1 340`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_vi.png`
+      flagImg: `flag_vi.png`,
     },
     {
       name: `Brunei Darussalam`,
@@ -297,7 +296,7 @@ export default function SocialMediaMessage() {
       code: `BN`,
       dial_code: `+673`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_bn.png`
+      flagImg: `flag_bn.png`,
     },
     {
       name: `Bulgaria`,
@@ -305,7 +304,7 @@ export default function SocialMediaMessage() {
       code: `BG`,
       dial_code: `+359`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_bg.png`
+      flagImg: `flag_bg.png`,
     },
     {
       name: `Burkina Faso`,
@@ -313,7 +312,7 @@ export default function SocialMediaMessage() {
       code: `BF`,
       dial_code: `+226`,
       timezone: `GMT`,
-      flagImg: `flag_bf.png`
+      flagImg: `flag_bf.png`,
     },
     {
       name: `Burundi`,
@@ -321,7 +320,7 @@ export default function SocialMediaMessage() {
       code: `BI`,
       dial_code: `+257`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_bi.png`
+      flagImg: `flag_bi.png`,
     },
     {
       name: `Cambodia`,
@@ -329,7 +328,7 @@ export default function SocialMediaMessage() {
       code: `KH`,
       dial_code: `+855`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_kh.png`
+      flagImg: `flag_kh.png`,
     },
     {
       name: `Cameroon`,
@@ -337,7 +336,7 @@ export default function SocialMediaMessage() {
       code: `CM`,
       dial_code: `+237`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_cm.png`
+      flagImg: `flag_cm.png`,
     },
     {
       name: `Canada`,
@@ -345,7 +344,7 @@ export default function SocialMediaMessage() {
       code: `CA`,
       dial_code: `+1`,
       timezone: `GMT-08:00`,
-      flagImg: `flag_ca.png`
+      flagImg: `flag_ca.png`,
     },
     {
       name: `Cabo Verde`,
@@ -353,7 +352,7 @@ export default function SocialMediaMessage() {
       code: `CV`,
       dial_code: `+238`,
       timezone: `GMT-01:00`,
-      flagImg: `flag_cv.png`
+      flagImg: `flag_cv.png`,
     },
     {
       name: `Cayman Islands`,
@@ -361,7 +360,7 @@ export default function SocialMediaMessage() {
       code: `KY`,
       dial_code: `+1345`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_ky.png`
+      flagImg: `flag_ky.png`,
     },
     {
       name: `Central African Republic`,
@@ -369,7 +368,7 @@ export default function SocialMediaMessage() {
       code: `CF`,
       dial_code: `+236`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_cf.png`
+      flagImg: `flag_cf.png`,
     },
     {
       name: `Chad`,
@@ -377,7 +376,7 @@ export default function SocialMediaMessage() {
       code: `TD`,
       dial_code: `+235`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_td.png`
+      flagImg: `flag_td.png`,
     },
     {
       name: `Chile`,
@@ -385,7 +384,7 @@ export default function SocialMediaMessage() {
       code: `CL`,
       dial_code: `+56`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_cl.png`
+      flagImg: `flag_cl.png`,
     },
     {
       name: `China`,
@@ -393,7 +392,7 @@ export default function SocialMediaMessage() {
       code: `CN`,
       dial_code: `+86`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_cn.png`
+      flagImg: `flag_cn.png`,
     },
     {
       name: `Christmas Island`,
@@ -401,7 +400,7 @@ export default function SocialMediaMessage() {
       code: `CX`,
       dial_code: `+61`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_cx.png`
+      flagImg: `flag_cx.png`,
     },
     {
       name: `Cocos (Keeling) Islands`,
@@ -409,7 +408,7 @@ export default function SocialMediaMessage() {
       code: `CC`,
       dial_code: `+61`,
       timezone: `GMT+06:30`,
-      flagImg: `flag_cc.png`
+      flagImg: `flag_cc.png`,
     },
     {
       name: `Colombia`,
@@ -417,7 +416,7 @@ export default function SocialMediaMessage() {
       code: `CO`,
       dial_code: `+57`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_co.png`
+      flagImg: `flag_co.png`,
     },
     {
       name: `Comoros`,
@@ -425,7 +424,7 @@ export default function SocialMediaMessage() {
       code: `KM`,
       dial_code: `+269`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_km.png`
+      flagImg: `flag_km.png`,
     },
     {
       name: `Congo`,
@@ -433,7 +432,7 @@ export default function SocialMediaMessage() {
       code: `CG`,
       dial_code: `+242`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_cg.png`
+      flagImg: `flag_cg.png`,
     },
     {
       name: `Congo (Democratic Republic of the)`,
@@ -441,7 +440,7 @@ export default function SocialMediaMessage() {
       code: `CD`,
       dial_code: `+243`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_cd.png`
+      flagImg: `flag_cd.png`,
     },
     {
       name: `Cook Islands`,
@@ -449,7 +448,7 @@ export default function SocialMediaMessage() {
       code: `CK`,
       dial_code: `+682`,
       timezone: `GMT-10:00`,
-      flagImg: `flag_ck.png`
+      flagImg: `flag_ck.png`,
     },
     {
       name: `Costa Rica`,
@@ -457,7 +456,7 @@ export default function SocialMediaMessage() {
       code: `CR`,
       dial_code: `+506`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_cr.png`
+      flagImg: `flag_cr.png`,
     },
     {
       name: `Croatia`,
@@ -465,7 +464,7 @@ export default function SocialMediaMessage() {
       code: `HR`,
       dial_code: `+385`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_hr.png`
+      flagImg: `flag_hr.png`,
     },
     {
       name: `Cuba`,
@@ -473,14 +472,14 @@ export default function SocialMediaMessage() {
       code: `CU`,
       dial_code: `+53`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_cu.png`
+      flagImg: `flag_cu.png`,
     },
     {
       name: `Curaçao`,
       currencyCode: `ANG`,
       code: `CW`,
       dial_code: `+599`,
-      timezone: `GMT-04:00`
+      timezone: `GMT-04:00`,
     },
     {
       name: `Cyprus`,
@@ -488,7 +487,7 @@ export default function SocialMediaMessage() {
       code: `CY`,
       dial_code: `+357`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_cy.png`
+      flagImg: `flag_cy.png`,
     },
     {
       name: `Czech Republic`,
@@ -496,7 +495,7 @@ export default function SocialMediaMessage() {
       code: `CZ`,
       dial_code: `+420`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_cz.png`
+      flagImg: `flag_cz.png`,
     },
     {
       name: `Denmark`,
@@ -504,7 +503,7 @@ export default function SocialMediaMessage() {
       code: `DK`,
       dial_code: `+45`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_dk.png`
+      flagImg: `flag_dk.png`,
     },
     {
       name: `Djibouti`,
@@ -512,7 +511,7 @@ export default function SocialMediaMessage() {
       code: `DJ`,
       dial_code: `+253`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_dj.png`
+      flagImg: `flag_dj.png`,
     },
     {
       name: `Dominica`,
@@ -520,7 +519,7 @@ export default function SocialMediaMessage() {
       code: `DM`,
       dial_code: `+1767`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_dm.png`
+      flagImg: `flag_dm.png`,
     },
     {
       name: `Dominican Republic`,
@@ -528,7 +527,7 @@ export default function SocialMediaMessage() {
       code: `DO`,
       dial_code: `+1809`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_do.png`
+      flagImg: `flag_do.png`,
     },
     {
       name: `Ecuador`,
@@ -536,7 +535,7 @@ export default function SocialMediaMessage() {
       code: `EC`,
       dial_code: `+593`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_ec.png`
+      flagImg: `flag_ec.png`,
     },
     {
       name: `Egypt`,
@@ -544,7 +543,7 @@ export default function SocialMediaMessage() {
       code: `EG`,
       dial_code: `+20`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_eg.png`
+      flagImg: `flag_eg.png`,
     },
     {
       name: `El Salvador`,
@@ -552,7 +551,7 @@ export default function SocialMediaMessage() {
       code: `SV`,
       dial_code: `+503`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_sv.png`
+      flagImg: `flag_sv.png`,
     },
     {
       name: `Equatorial Guinea`,
@@ -560,7 +559,7 @@ export default function SocialMediaMessage() {
       code: `GQ`,
       dial_code: `+240`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_gq.png`
+      flagImg: `flag_gq.png`,
     },
     {
       name: `Eritrea`,
@@ -568,7 +567,7 @@ export default function SocialMediaMessage() {
       code: `ER`,
       dial_code: `+291`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_er.png`
+      flagImg: `flag_er.png`,
     },
     {
       name: `Estonia`,
@@ -576,7 +575,7 @@ export default function SocialMediaMessage() {
       code: `EE`,
       dial_code: `+372`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_ee.png`
+      flagImg: `flag_ee.png`,
     },
     {
       name: `Ethiopia`,
@@ -584,7 +583,7 @@ export default function SocialMediaMessage() {
       code: `ET`,
       dial_code: `+251`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_et.png`
+      flagImg: `flag_et.png`,
     },
     {
       name: `Falkland Islands (Malvinas)`,
@@ -592,7 +591,7 @@ export default function SocialMediaMessage() {
       code: `FK`,
       dial_code: `+500`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_fk.png`
+      flagImg: `flag_fk.png`,
     },
     {
       name: `Faroe Islands`,
@@ -600,7 +599,7 @@ export default function SocialMediaMessage() {
       code: `FO`,
       dial_code: `+298`,
       timezone: `GMT+00:00`,
-      flagImg: `flag_fo.png`
+      flagImg: `flag_fo.png`,
     },
     {
       name: `Fiji`,
@@ -608,7 +607,7 @@ export default function SocialMediaMessage() {
       code: `FJ`,
       dial_code: `+679`,
       timezone: `GMT+12:00`,
-      flagImg: `flag_fj.png`
+      flagImg: `flag_fj.png`,
     },
     {
       name: `Finland`,
@@ -616,7 +615,7 @@ export default function SocialMediaMessage() {
       code: `FI`,
       dial_code: `+358`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_fi.png`
+      flagImg: `flag_fi.png`,
     },
     {
       name: `France`,
@@ -624,7 +623,7 @@ export default function SocialMediaMessage() {
       code: `FR`,
       dial_code: `+33`,
       timezone: `GMT-10:00`,
-      flagImg: `flag_fr.png`
+      flagImg: `flag_fr.png`,
     },
     {
       name: `French Guiana`,
@@ -632,7 +631,7 @@ export default function SocialMediaMessage() {
       code: `GF`,
       dial_code: `+594`,
       timezone: `GMT-03:00`,
-      flagImg: `flag_gf.png`
+      flagImg: `flag_gf.png`,
     },
     {
       name: `French Polynesia`,
@@ -640,7 +639,7 @@ export default function SocialMediaMessage() {
       code: `PF`,
       dial_code: `+689`,
       timezone: `GMT-10:00`,
-      flagImg: `flag_pf.png`
+      flagImg: `flag_pf.png`,
     },
     {
       name: `Gabon`,
@@ -648,7 +647,7 @@ export default function SocialMediaMessage() {
       code: `GA`,
       dial_code: `+241`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ga.png`
+      flagImg: `flag_ga.png`,
     },
     {
       name: `Gambia`,
@@ -656,7 +655,7 @@ export default function SocialMediaMessage() {
       code: `GM`,
       dial_code: `+220`,
       timezone: `GMT+00:00`,
-      flagImg: `flag_gm.png`
+      flagImg: `flag_gm.png`,
     },
     {
       name: `Georgia`,
@@ -664,7 +663,7 @@ export default function SocialMediaMessage() {
       code: `GE`,
       dial_code: `+995`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_ge.png`
+      flagImg: `flag_ge.png`,
     },
     {
       name: `Germany`,
@@ -672,7 +671,7 @@ export default function SocialMediaMessage() {
       code: `DE`,
       dial_code: `+49`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_de.png`
+      flagImg: `flag_de.png`,
     },
     {
       name: `Ghana`,
@@ -680,7 +679,7 @@ export default function SocialMediaMessage() {
       code: `GH`,
       dial_code: `+233`,
       timezone: `GMT`,
-      flagImg: `flag_gh.png`
+      flagImg: `flag_gh.png`,
     },
     {
       name: `Gibraltar`,
@@ -688,7 +687,7 @@ export default function SocialMediaMessage() {
       code: `GI`,
       dial_code: `+350`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_gi.png`
+      flagImg: `flag_gi.png`,
     },
     {
       name: `Greece`,
@@ -696,7 +695,7 @@ export default function SocialMediaMessage() {
       code: `GR`,
       dial_code: `+30`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_gr.png`
+      flagImg: `flag_gr.png`,
     },
     {
       name: `Greenland`,
@@ -704,7 +703,7 @@ export default function SocialMediaMessage() {
       code: `GL`,
       dial_code: `+299`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_gl.png`
+      flagImg: `flag_gl.png`,
     },
     {
       name: `Grenada`,
@@ -712,7 +711,7 @@ export default function SocialMediaMessage() {
       code: `GD`,
       dial_code: `+1473`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_gd.png`
+      flagImg: `flag_gd.png`,
     },
     {
       name: `Guadeloupe`,
@@ -720,7 +719,7 @@ export default function SocialMediaMessage() {
       code: `GP`,
       dial_code: `+590`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_gp.png`
+      flagImg: `flag_gp.png`,
     },
     {
       name: `Guam`,
@@ -728,7 +727,7 @@ export default function SocialMediaMessage() {
       code: `GU`,
       dial_code: `+1671`,
       timezone: `GMT+10:00`,
-      flagImg: `flag_gu.png`
+      flagImg: `flag_gu.png`,
     },
     {
       name: `Guatemala`,
@@ -736,7 +735,7 @@ export default function SocialMediaMessage() {
       code: `GT`,
       dial_code: `+502`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_gt.png`
+      flagImg: `flag_gt.png`,
     },
     {
       name: `Guernsey`,
@@ -744,7 +743,7 @@ export default function SocialMediaMessage() {
       code: `GG`,
       dial_code: `+44`,
       timezone: `GMT+00:00`,
-      flagImg: `flag_gg.png`
+      flagImg: `flag_gg.png`,
     },
     {
       name: `Guinea`,
@@ -752,7 +751,7 @@ export default function SocialMediaMessage() {
       code: `GN`,
       dial_code: `+224`,
       timezone: `GMT`,
-      flagImg: `flag_gn.png`
+      flagImg: `flag_gn.png`,
     },
     {
       name: `Guinea-Bissau`,
@@ -760,7 +759,7 @@ export default function SocialMediaMessage() {
       code: `GW`,
       dial_code: `+245`,
       timezone: `GMT`,
-      flagImg: `flag_gw.png`
+      flagImg: `flag_gw.png`,
     },
     {
       name: `Guyana`,
@@ -768,7 +767,7 @@ export default function SocialMediaMessage() {
       code: `GY`,
       dial_code: `+592`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_gy.png`
+      flagImg: `flag_gy.png`,
     },
     {
       name: `Haiti`,
@@ -776,7 +775,7 @@ export default function SocialMediaMessage() {
       code: `HT`,
       dial_code: `+509`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_ht.png`
+      flagImg: `flag_ht.png`,
     },
     {
       name: `Holy See`,
@@ -784,7 +783,7 @@ export default function SocialMediaMessage() {
       code: `VA`,
       dial_code: `+379`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_va.png`
+      flagImg: `flag_va.png`,
     },
     {
       name: `Honduras`,
@@ -792,7 +791,7 @@ export default function SocialMediaMessage() {
       code: `HN`,
       dial_code: `+504`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_hn.png`
+      flagImg: `flag_hn.png`,
     },
     {
       name: `Hong Kong`,
@@ -800,7 +799,7 @@ export default function SocialMediaMessage() {
       code: `HK`,
       dial_code: `+852`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_hk.png`
+      flagImg: `flag_hk.png`,
     },
     {
       name: `Hungary`,
@@ -808,7 +807,7 @@ export default function SocialMediaMessage() {
       code: `HU`,
       dial_code: `+36`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_hu.png`
+      flagImg: `flag_hu.png`,
     },
     {
       name: `Iceland`,
@@ -816,7 +815,7 @@ export default function SocialMediaMessage() {
       code: `IS`,
       dial_code: `+354`,
       timezone: `GMT`,
-      flagImg: `flag_is.png`
+      flagImg: `flag_is.png`,
     },
     {
       name: `India`,
@@ -824,7 +823,7 @@ export default function SocialMediaMessage() {
       code: `IN`,
       dial_code: `+91`,
       timezone: `GMT+05:30`,
-      flagImg: `flag_in.png`
+      flagImg: `flag_in.png`,
     },
     {
       name: `Indonesia`,
@@ -832,7 +831,7 @@ export default function SocialMediaMessage() {
       code: `ID`,
       dial_code: `+62`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_id.png`
+      flagImg: `flag_id.png`,
     },
     {
       name: `Côte d'Ivoire`,
@@ -840,7 +839,7 @@ export default function SocialMediaMessage() {
       code: `CI`,
       dial_code: `+225`,
       timezone: `GMT`,
-      flagImg: `flag_ci.png`
+      flagImg: `flag_ci.png`,
     },
     {
       name: `Iran (Islamic Republic of)`,
@@ -848,7 +847,7 @@ export default function SocialMediaMessage() {
       code: `IR`,
       dial_code: `+98`,
       timezone: `GMT+03:30`,
-      flagImg: `flag_ir.png`
+      flagImg: `flag_ir.png`,
     },
     {
       name: `Iraq`,
@@ -856,7 +855,7 @@ export default function SocialMediaMessage() {
       code: `IQ`,
       dial_code: `+964`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_iq.png`
+      flagImg: `flag_iq.png`,
     },
     {
       name: `Ireland`,
@@ -864,7 +863,7 @@ export default function SocialMediaMessage() {
       code: `IE`,
       dial_code: `+353`,
       timezone: `GMT`,
-      flagImg: `flag_ie.png`
+      flagImg: `flag_ie.png`,
     },
     {
       name: `Isle of Man`,
@@ -872,7 +871,7 @@ export default function SocialMediaMessage() {
       code: `IM`,
       dial_code: `+44`,
       timezone: `GMT+00:00`,
-      flagImg: `flag_im.png`
+      flagImg: `flag_im.png`,
     },
     {
       name: `Israel`,
@@ -880,7 +879,7 @@ export default function SocialMediaMessage() {
       code: `IL`,
       dial_code: `+972`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_il.png`
+      flagImg: `flag_il.png`,
     },
     {
       name: `Italy`,
@@ -888,7 +887,7 @@ export default function SocialMediaMessage() {
       code: `IT`,
       dial_code: `+39`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_it.png`
+      flagImg: `flag_it.png`,
     },
     {
       name: `Jamaica`,
@@ -896,7 +895,7 @@ export default function SocialMediaMessage() {
       code: `JM`,
       dial_code: `+1876`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_jm.png`
+      flagImg: `flag_jm.png`,
     },
     {
       name: `Japan`,
@@ -904,7 +903,7 @@ export default function SocialMediaMessage() {
       code: `JP`,
       dial_code: `+81`,
       timezone: `GMT+09:00`,
-      flagImg: `flag_jp.png`
+      flagImg: `flag_jp.png`,
     },
     {
       name: `Jersey`,
@@ -912,7 +911,7 @@ export default function SocialMediaMessage() {
       code: `JE`,
       dial_code: `+44`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_je.png`
+      flagImg: `flag_je.png`,
     },
     {
       name: `Jordan`,
@@ -920,7 +919,7 @@ export default function SocialMediaMessage() {
       code: `JO`,
       dial_code: `+962`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_jo.png`
+      flagImg: `flag_jo.png`,
     },
     {
       name: `Kazakhstan`,
@@ -928,7 +927,7 @@ export default function SocialMediaMessage() {
       code: `KZ`,
       dial_code: `+76`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_kz.png`
+      flagImg: `flag_kz.png`,
     },
     {
       name: `Kenya`,
@@ -936,7 +935,7 @@ export default function SocialMediaMessage() {
       code: `KE`,
       dial_code: `+254`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_ke.png`
+      flagImg: `flag_ke.png`,
     },
     {
       name: `Kiribati`,
@@ -944,7 +943,7 @@ export default function SocialMediaMessage() {
       code: `KI`,
       dial_code: `+686`,
       timezone: `GMT+12:00`,
-      flagImg: `flag_ki.png`
+      flagImg: `flag_ki.png`,
     },
     {
       name: `Kuwait`,
@@ -952,7 +951,7 @@ export default function SocialMediaMessage() {
       code: `KW`,
       dial_code: `+965`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_kw.png`
+      flagImg: `flag_kw.png`,
     },
     {
       name: `Kyrgyzstan`,
@@ -960,7 +959,7 @@ export default function SocialMediaMessage() {
       code: `KG`,
       dial_code: `+996`,
       timezone: `GMT+06:00`,
-      flagImg: `flag_kg.png`
+      flagImg: `flag_kg.png`,
     },
     {
       name: `Lao People's Democratic Republic`,
@@ -968,7 +967,7 @@ export default function SocialMediaMessage() {
       code: `LA`,
       dial_code: `+856`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_la.png`
+      flagImg: `flag_la.png`,
     },
     {
       name: `Latvia`,
@@ -976,7 +975,7 @@ export default function SocialMediaMessage() {
       code: `LV`,
       dial_code: `+371`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_lv.png`
+      flagImg: `flag_lv.png`,
     },
     {
       name: `Lebanon`,
@@ -984,7 +983,7 @@ export default function SocialMediaMessage() {
       code: `LB`,
       dial_code: `+961`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_lb.png`
+      flagImg: `flag_lb.png`,
     },
     {
       name: `Lesotho`,
@@ -992,7 +991,7 @@ export default function SocialMediaMessage() {
       code: `LS`,
       dial_code: `+266`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_ls.png`
+      flagImg: `flag_ls.png`,
     },
     {
       name: `Liberia`,
@@ -1000,7 +999,7 @@ export default function SocialMediaMessage() {
       code: `LR`,
       dial_code: `+231`,
       timezone: `GMT`,
-      flagImg: `flag_lr.png`
+      flagImg: `flag_lr.png`,
     },
     {
       name: `Libya`,
@@ -1008,7 +1007,7 @@ export default function SocialMediaMessage() {
       code: `LY`,
       dial_code: `+218`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ly.png`
+      flagImg: `flag_ly.png`,
     },
     {
       name: `Liechtenstein`,
@@ -1016,7 +1015,7 @@ export default function SocialMediaMessage() {
       code: `LI`,
       dial_code: `+423`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_li.png`
+      flagImg: `flag_li.png`,
     },
     {
       name: `Lithuania`,
@@ -1024,7 +1023,7 @@ export default function SocialMediaMessage() {
       code: `LT`,
       dial_code: `+370`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_lt.png`
+      flagImg: `flag_lt.png`,
     },
     {
       name: `Luxembourg`,
@@ -1032,7 +1031,7 @@ export default function SocialMediaMessage() {
       code: `LU`,
       dial_code: `+352`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_lu.png`
+      flagImg: `flag_lu.png`,
     },
     {
       name: `Macao`,
@@ -1040,7 +1039,7 @@ export default function SocialMediaMessage() {
       code: `MO`,
       dial_code: `+853`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_mo.png`
+      flagImg: `flag_mo.png`,
     },
     {
       name: `Macedonia (the former Yugoslav Republic of)`,
@@ -1048,7 +1047,7 @@ export default function SocialMediaMessage() {
       code: `MK`,
       dial_code: `+389`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_mk.png`
+      flagImg: `flag_mk.png`,
     },
     {
       name: `Madagascar`,
@@ -1056,7 +1055,7 @@ export default function SocialMediaMessage() {
       code: `MG`,
       dial_code: `+261`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_mg.png`
+      flagImg: `flag_mg.png`,
     },
     {
       name: `Malawi`,
@@ -1064,7 +1063,7 @@ export default function SocialMediaMessage() {
       code: `MW`,
       dial_code: `+265`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_mw.png`
+      flagImg: `flag_mw.png`,
     },
     {
       name: `Malaysia`,
@@ -1072,7 +1071,7 @@ export default function SocialMediaMessage() {
       code: `MY`,
       dial_code: `+60`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_my.png`
+      flagImg: `flag_my.png`,
     },
     {
       name: `Maldives`,
@@ -1080,7 +1079,7 @@ export default function SocialMediaMessage() {
       code: `MV`,
       dial_code: `+960`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_mv.png`
+      flagImg: `flag_mv.png`,
     },
     {
       name: `Mali`,
@@ -1088,7 +1087,7 @@ export default function SocialMediaMessage() {
       code: `ML`,
       dial_code: `+223`,
       timezone: `GMT`,
-      flagImg: `flag_ml.png`
+      flagImg: `flag_ml.png`,
     },
     {
       name: `Malta`,
@@ -1096,7 +1095,7 @@ export default function SocialMediaMessage() {
       code: `MT`,
       dial_code: `+356`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_mt.png`
+      flagImg: `flag_mt.png`,
     },
     {
       name: `Marshall Islands`,
@@ -1104,7 +1103,7 @@ export default function SocialMediaMessage() {
       code: `MH`,
       dial_code: `+692`,
       timezone: `GMT+12:00`,
-      flagImg: `flag_mh.png`
+      flagImg: `flag_mh.png`,
     },
     {
       name: `Martinique`,
@@ -1112,7 +1111,7 @@ export default function SocialMediaMessage() {
       code: `MQ`,
       dial_code: `+596`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_mq.png`
+      flagImg: `flag_mq.png`,
     },
     {
       name: `Mauritania`,
@@ -1120,7 +1119,7 @@ export default function SocialMediaMessage() {
       code: `MR`,
       dial_code: `+222`,
       timezone: `GMT`,
-      flagImg: `flag_mr.png`
+      flagImg: `flag_mr.png`,
     },
     {
       name: `Mauritius`,
@@ -1128,7 +1127,7 @@ export default function SocialMediaMessage() {
       code: `MU`,
       dial_code: `+230`,
       timezone: `GMT+04:00`,
-      flagImg: `flag_mu.png`
+      flagImg: `flag_mu.png`,
     },
     {
       name: `Mayotte`,
@@ -1136,7 +1135,7 @@ export default function SocialMediaMessage() {
       code: `YT`,
       dial_code: `+262`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_yt.png`
+      flagImg: `flag_yt.png`,
     },
     {
       name: `Mexico`,
@@ -1144,7 +1143,7 @@ export default function SocialMediaMessage() {
       code: `MX`,
       dial_code: `+52`,
       timezone: `GMT-08:00`,
-      flagImg: `flag_mx.png`
+      flagImg: `flag_mx.png`,
     },
     {
       name: `Micronesia (Federated States of)`,
@@ -1152,7 +1151,7 @@ export default function SocialMediaMessage() {
       code: `FM`,
       dial_code: `+691`,
       timezone: `GMT+10:00`,
-      flagImg: `flag_fm.png`
+      flagImg: `flag_fm.png`,
     },
     {
       name: `Moldova (Republic of)`,
@@ -1160,7 +1159,7 @@ export default function SocialMediaMessage() {
       code: `MD`,
       dial_code: `+373`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_md.png`
+      flagImg: `flag_md.png`,
     },
     {
       name: `Monaco`,
@@ -1168,7 +1167,7 @@ export default function SocialMediaMessage() {
       code: `MC`,
       dial_code: `+377`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_mc.png`
+      flagImg: `flag_mc.png`,
     },
     {
       name: `Mongolia`,
@@ -1176,7 +1175,7 @@ export default function SocialMediaMessage() {
       code: `MN`,
       dial_code: `+976`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_mn.png`
+      flagImg: `flag_mn.png`,
     },
     {
       name: `Montenegro`,
@@ -1184,7 +1183,7 @@ export default function SocialMediaMessage() {
       code: `ME`,
       dial_code: `+382`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_me.png`
+      flagImg: `flag_me.png`,
     },
     {
       name: `Montserrat`,
@@ -1192,7 +1191,7 @@ export default function SocialMediaMessage() {
       code: `MS`,
       dial_code: `+1664`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_ms.png`
+      flagImg: `flag_ms.png`,
     },
     {
       name: `Morocco`,
@@ -1200,7 +1199,7 @@ export default function SocialMediaMessage() {
       code: `MA`,
       dial_code: `+212`,
       timezone: `GMT`,
-      flagImg: `flag_ma.png`
+      flagImg: `flag_ma.png`,
     },
     {
       name: `Mozambique`,
@@ -1208,7 +1207,7 @@ export default function SocialMediaMessage() {
       code: `MZ`,
       dial_code: `+258`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_mz.png`
+      flagImg: `flag_mz.png`,
     },
     {
       name: `Myanmar`,
@@ -1216,7 +1215,7 @@ export default function SocialMediaMessage() {
       code: `MM`,
       dial_code: `+95`,
       timezone: `GMT+06:30`,
-      flagImg: `flag_mm.png`
+      flagImg: `flag_mm.png`,
     },
     {
       name: `Namibia`,
@@ -1224,7 +1223,7 @@ export default function SocialMediaMessage() {
       code: `NA`,
       dial_code: `+264`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_na.png`
+      flagImg: `flag_na.png`,
     },
     {
       name: `Nauru`,
@@ -1232,7 +1231,7 @@ export default function SocialMediaMessage() {
       code: `NR`,
       dial_code: `+674`,
       timezone: `GMT+12:00`,
-      flagImg: `flag_nr.png`
+      flagImg: `flag_nr.png`,
     },
     {
       name: `Nepal`,
@@ -1240,7 +1239,7 @@ export default function SocialMediaMessage() {
       code: `NP`,
       dial_code: `+977`,
       timezone: `GMT+05:45`,
-      flagImg: `flag_np.png`
+      flagImg: `flag_np.png`,
     },
     {
       name: `Netherlands`,
@@ -1248,7 +1247,7 @@ export default function SocialMediaMessage() {
       code: `NL`,
       dial_code: `+31`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_nl.png`
+      flagImg: `flag_nl.png`,
     },
     {
       name: `New Caledonia`,
@@ -1256,7 +1255,7 @@ export default function SocialMediaMessage() {
       code: `NC`,
       dial_code: `+687`,
       timezone: `GMT+11:00`,
-      flagImg: `flag_nc.png`
+      flagImg: `flag_nc.png`,
     },
     {
       name: `New Zealand`,
@@ -1264,7 +1263,7 @@ export default function SocialMediaMessage() {
       code: `NZ`,
       dial_code: `+64`,
       timezone: `GMT-11:00`,
-      flagImg: `flag_nz.png`
+      flagImg: `flag_nz.png`,
     },
     {
       name: `Nicaragua`,
@@ -1272,7 +1271,7 @@ export default function SocialMediaMessage() {
       code: `NI`,
       dial_code: `+505`,
       timezone: `GMT-06:00`,
-      flagImg: `flag_ni.png`
+      flagImg: `flag_ni.png`,
     },
     {
       name: `Niger`,
@@ -1280,7 +1279,7 @@ export default function SocialMediaMessage() {
       code: `NE`,
       dial_code: `+227`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ne.png`
+      flagImg: `flag_ne.png`,
     },
     {
       name: `Nigeria`,
@@ -1288,7 +1287,7 @@ export default function SocialMediaMessage() {
       code: `NG`,
       dial_code: `+234`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ng.png`
+      flagImg: `flag_ng.png`,
     },
     {
       name: `Niue`,
@@ -1296,7 +1295,7 @@ export default function SocialMediaMessage() {
       code: `NU`,
       dial_code: `+683`,
       timezone: `GMT-11:00`,
-      flagImg: `flag_nu.png`
+      flagImg: `flag_nu.png`,
     },
     {
       name: `Norfolk Island`,
@@ -1304,7 +1303,7 @@ export default function SocialMediaMessage() {
       code: `NF`,
       dial_code: `+672`,
       timezone: `GMT+11:30`,
-      flagImg: `flag_nf.png`
+      flagImg: `flag_nf.png`,
     },
     {
       name: `Korea (Democratic People's Republic of)`,
@@ -1312,7 +1311,7 @@ export default function SocialMediaMessage() {
       code: `KP`,
       dial_code: `+850`,
       timezone: `GMT+09:00`,
-      flagImg: `flag_kp.png`
+      flagImg: `flag_kp.png`,
     },
     {
       name: `Northern Mariana Islands`,
@@ -1320,7 +1319,7 @@ export default function SocialMediaMessage() {
       code: `MP`,
       dial_code: `+1670`,
       timezone: `GMT+10:00`,
-      flagImg: `flag_mp.png`
+      flagImg: `flag_mp.png`,
     },
     {
       name: `Norway`,
@@ -1328,7 +1327,7 @@ export default function SocialMediaMessage() {
       code: `NO`,
       dial_code: `+47`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_no.png`
+      flagImg: `flag_no.png`,
     },
     {
       name: `Oman`,
@@ -1336,7 +1335,7 @@ export default function SocialMediaMessage() {
       code: `OM`,
       dial_code: `+968`,
       timezone: `GMT+04:00`,
-      flagImg: `flag_om.png`
+      flagImg: `flag_om.png`,
     },
     {
       name: `Pakistan`,
@@ -1344,7 +1343,7 @@ export default function SocialMediaMessage() {
       code: `PK`,
       dial_code: `+92`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_pk.png`
+      flagImg: `flag_pk.png`,
     },
     {
       name: `Palau`,
@@ -1352,7 +1351,7 @@ export default function SocialMediaMessage() {
       code: `PW`,
       dial_code: `+680`,
       timezone: `GMT+09:00`,
-      flagImg: `flag_pw.png`
+      flagImg: `flag_pw.png`,
     },
     {
       name: `Palestine, State of`,
@@ -1360,7 +1359,7 @@ export default function SocialMediaMessage() {
       code: `PS`,
       dial_code: `+970`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_ps.png`
+      flagImg: `flag_ps.png`,
     },
     {
       name: `Panama`,
@@ -1368,7 +1367,7 @@ export default function SocialMediaMessage() {
       code: `PA`,
       dial_code: `+507`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_pa.png`
+      flagImg: `flag_pa.png`,
     },
     {
       name: `Papua New Guinea`,
@@ -1376,7 +1375,7 @@ export default function SocialMediaMessage() {
       code: `PG`,
       dial_code: `+675`,
       timezone: `GMT+10:00`,
-      flagImg: `flag_pg.png`
+      flagImg: `flag_pg.png`,
     },
     {
       name: `Paraguay`,
@@ -1384,7 +1383,7 @@ export default function SocialMediaMessage() {
       code: `PY`,
       dial_code: `+595`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_py.png`
+      flagImg: `flag_py.png`,
     },
     {
       name: `Peru`,
@@ -1392,7 +1391,7 @@ export default function SocialMediaMessage() {
       code: `PE`,
       dial_code: `+51`,
       timezone: `GMT-05:00`,
-      flagImg: `flag_pe.png`
+      flagImg: `flag_pe.png`,
     },
     {
       name: `Philippines`,
@@ -1400,7 +1399,7 @@ export default function SocialMediaMessage() {
       code: `PH`,
       dial_code: `+63`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_ph.png`
+      flagImg: `flag_ph.png`,
     },
     {
       name: `Pitcairn`,
@@ -1408,7 +1407,7 @@ export default function SocialMediaMessage() {
       code: `PN`,
       dial_code: `+64`,
       timezone: `GMT-08:00`,
-      flagImg: `flag_pn.png`
+      flagImg: `flag_pn.png`,
     },
     {
       name: `Poland`,
@@ -1416,7 +1415,7 @@ export default function SocialMediaMessage() {
       code: `PL`,
       dial_code: `+48`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_pl.png`
+      flagImg: `flag_pl.png`,
     },
     {
       name: `Portugal`,
@@ -1424,7 +1423,7 @@ export default function SocialMediaMessage() {
       code: `PT`,
       dial_code: `+351`,
       timezone: `GMT-01:00`,
-      flagImg: `flag_pt.png`
+      flagImg: `flag_pt.png`,
     },
     {
       name: `Puerto Rico`,
@@ -1432,7 +1431,7 @@ export default function SocialMediaMessage() {
       code: `PR`,
       dial_code: `+1787`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_pr.png`
+      flagImg: `flag_pr.png`,
     },
     {
       name: `Qatar`,
@@ -1440,14 +1439,14 @@ export default function SocialMediaMessage() {
       code: `QA`,
       dial_code: `+974`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_qa.png`
+      flagImg: `flag_qa.png`,
     },
     {
       name: `Republic of Kosovo`,
       currencyCode: `EUR`,
       code: `XK`,
       dial_code: `+383`,
-      timezone: `GMT+01:00`
+      timezone: `GMT+01:00`,
     },
     {
       name: `Réunion`,
@@ -1455,7 +1454,7 @@ export default function SocialMediaMessage() {
       code: `RE`,
       dial_code: `+262`,
       timezone: `GMT+04:00`,
-      flagImg: `flag_re.png`
+      flagImg: `flag_re.png`,
     },
     {
       name: `Romania`,
@@ -1463,7 +1462,7 @@ export default function SocialMediaMessage() {
       code: `RO`,
       dial_code: `+40`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_ro.png`
+      flagImg: `flag_ro.png`,
     },
     {
       name: `Russian Federation`,
@@ -1471,7 +1470,7 @@ export default function SocialMediaMessage() {
       code: `RU`,
       dial_code: `+7`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_ru.png`
+      flagImg: `flag_ru.png`,
     },
     {
       name: `Rwanda`,
@@ -1479,14 +1478,14 @@ export default function SocialMediaMessage() {
       code: `RW`,
       dial_code: `+250`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_rw.png`
+      flagImg: `flag_rw.png`,
     },
     {
       name: `Saint Barthélemy`,
       currencyCode: `EUR`,
       code: `BL`,
       dial_code: `+590`,
-      timezone: `GMT-04:00`
+      timezone: `GMT-04:00`,
     },
     {
       name: `Saint Helena, Ascension and Tristan da Cunha`,
@@ -1494,7 +1493,7 @@ export default function SocialMediaMessage() {
       code: `SH`,
       dial_code: `+290`,
       timezone: `GMT+00:00`,
-      flagImg: `flag_sh.png`
+      flagImg: `flag_sh.png`,
     },
     {
       name: `Saint Kitts and Nevis`,
@@ -1502,7 +1501,7 @@ export default function SocialMediaMessage() {
       code: `KN`,
       dial_code: `+1869`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_kn.png`
+      flagImg: `flag_kn.png`,
     },
     {
       name: `Saint Lucia`,
@@ -1510,21 +1509,21 @@ export default function SocialMediaMessage() {
       code: `LC`,
       dial_code: `+1758`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_lc.png`
+      flagImg: `flag_lc.png`,
     },
     {
       name: `Saint Martin (French part)`,
       currencyCode: `EUR`,
       code: `MF`,
       dial_code: `+590`,
-      timezone: `GMT-04:00`
+      timezone: `GMT-04:00`,
     },
     {
       name: `Saint Pierre and Miquelon`,
       currencyCode: `EUR`,
       code: `PM`,
       dial_code: `+508`,
-      timezone: `GMT-03:00`
+      timezone: `GMT-03:00`,
     },
     {
       name: `Saint Vincent and the Grenadines`,
@@ -1532,7 +1531,7 @@ export default function SocialMediaMessage() {
       code: `VC`,
       dial_code: `+1784`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_vc.png`
+      flagImg: `flag_vc.png`,
     },
     {
       name: `Samoa`,
@@ -1540,7 +1539,7 @@ export default function SocialMediaMessage() {
       code: `WS`,
       dial_code: `+685`,
       timezone: `GMT+13:00`,
-      flagImg: `flag_ws.png`
+      flagImg: `flag_ws.png`,
     },
     {
       name: `San Marino`,
@@ -1548,7 +1547,7 @@ export default function SocialMediaMessage() {
       code: `SM`,
       dial_code: `+378`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_sm.png`
+      flagImg: `flag_sm.png`,
     },
     {
       name: `Sao Tome and Principe`,
@@ -1556,7 +1555,7 @@ export default function SocialMediaMessage() {
       code: `ST`,
       dial_code: `+239`,
       timezone: `GMT`,
-      flagImg: `flag_st.png`
+      flagImg: `flag_st.png`,
     },
     {
       name: `Saudi Arabia`,
@@ -1564,7 +1563,7 @@ export default function SocialMediaMessage() {
       code: `SA`,
       dial_code: `+966`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_sa.png`
+      flagImg: `flag_sa.png`,
     },
     {
       name: `Senegal`,
@@ -1572,7 +1571,7 @@ export default function SocialMediaMessage() {
       code: `SN`,
       dial_code: `+221`,
       timezone: `GMT`,
-      flagImg: `flag_sn.png`
+      flagImg: `flag_sn.png`,
     },
     {
       name: `Serbia`,
@@ -1580,7 +1579,7 @@ export default function SocialMediaMessage() {
       code: `RS`,
       dial_code: `+381`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_rs.png`
+      flagImg: `flag_rs.png`,
     },
     {
       name: `Seychelles`,
@@ -1588,7 +1587,7 @@ export default function SocialMediaMessage() {
       code: `SC`,
       dial_code: `+248`,
       timezone: `GMT+04:00`,
-      flagImg: `flag_sc.png`
+      flagImg: `flag_sc.png`,
     },
     {
       name: `Sierra Leone`,
@@ -1596,7 +1595,7 @@ export default function SocialMediaMessage() {
       code: `SL`,
       dial_code: `+232`,
       timezone: `GMT`,
-      flagImg: `flag_sl.png`
+      flagImg: `flag_sl.png`,
     },
     {
       name: `Singapore`,
@@ -1604,14 +1603,14 @@ export default function SocialMediaMessage() {
       code: `SG`,
       dial_code: `+65`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_sg.png`
+      flagImg: `flag_sg.png`,
     },
     {
       name: `Sint Maarten (DGMTh part)`,
       currencyCode: `ANG`,
       code: `SX`,
       dial_code: `+1721`,
-      timezone: `GMT-04:00`
+      timezone: `GMT-04:00`,
     },
     {
       name: `Slovakia`,
@@ -1619,7 +1618,7 @@ export default function SocialMediaMessage() {
       code: `SK`,
       dial_code: `+421`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_sk.png`
+      flagImg: `flag_sk.png`,
     },
     {
       name: `Slovenia`,
@@ -1627,7 +1626,7 @@ export default function SocialMediaMessage() {
       code: `SI`,
       dial_code: `+386`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_si.png`
+      flagImg: `flag_si.png`,
     },
     {
       name: `Solomon Islands`,
@@ -1635,7 +1634,7 @@ export default function SocialMediaMessage() {
       code: `SB`,
       dial_code: `+677`,
       timezone: `GMT+11:00`,
-      flagImg: `flag_sb.png`
+      flagImg: `flag_sb.png`,
     },
     {
       name: `Somalia`,
@@ -1643,7 +1642,7 @@ export default function SocialMediaMessage() {
       code: `SO`,
       dial_code: `+252`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_so.png`
+      flagImg: `flag_so.png`,
     },
     {
       name: `South Africa`,
@@ -1651,14 +1650,14 @@ export default function SocialMediaMessage() {
       code: `ZA`,
       dial_code: `+27`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_za.png`
+      flagImg: `flag_za.png`,
     },
     {
       name: `South Georgia and the South Sandwich Islands`,
       currencyCode: `GBP`,
       code: `GS`,
       dial_code: `+500`,
-      timezone: `GMT-02:00`
+      timezone: `GMT-02:00`,
     },
     {
       name: `Korea (Republic of)`,
@@ -1666,14 +1665,14 @@ export default function SocialMediaMessage() {
       code: `KR`,
       dial_code: `+82`,
       timezone: `GMT+09:00`,
-      flagImg: `flag_kr.png`
+      flagImg: `flag_kr.png`,
     },
     {
       name: `South Sudan`,
       currencyCode: `SSP`,
       code: `SS`,
       dial_code: `+211`,
-      timezone: `GMT+03:00`
+      timezone: `GMT+03:00`,
     },
     {
       name: `Spain`,
@@ -1681,7 +1680,7 @@ export default function SocialMediaMessage() {
       code: `ES`,
       dial_code: `+34`,
       timezone: `GMT`,
-      flagImg: `flag_es.png`
+      flagImg: `flag_es.png`,
     },
     {
       name: `Sri Lanka`,
@@ -1689,7 +1688,7 @@ export default function SocialMediaMessage() {
       code: `LK`,
       dial_code: `+94`,
       timezone: `GMT+05:30`,
-      flagImg: `flag_lk.png`
+      flagImg: `flag_lk.png`,
     },
     {
       name: `Sudan`,
@@ -1697,7 +1696,7 @@ export default function SocialMediaMessage() {
       code: `SD`,
       dial_code: `+249`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_sd.png`
+      flagImg: `flag_sd.png`,
     },
     {
       name: `Suriname`,
@@ -1705,7 +1704,7 @@ export default function SocialMediaMessage() {
       code: `SR`,
       dial_code: `+597`,
       timezone: `GMT-03:00`,
-      flagImg: `flag_sr.png`
+      flagImg: `flag_sr.png`,
     },
     {
       name: `Svalbard and Jan Mayen`,
@@ -1713,7 +1712,7 @@ export default function SocialMediaMessage() {
       code: `SJ`,
       dial_code: `+4779`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_sj.png`
+      flagImg: `flag_sj.png`,
     },
     {
       name: `Swaziland`,
@@ -1721,7 +1720,7 @@ export default function SocialMediaMessage() {
       code: `SZ`,
       dial_code: `+268`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_sz.png`
+      flagImg: `flag_sz.png`,
     },
     {
       name: `Sweden`,
@@ -1729,7 +1728,7 @@ export default function SocialMediaMessage() {
       code: `SE`,
       dial_code: `+46`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_se.png`
+      flagImg: `flag_se.png`,
     },
     {
       name: `Switzerland`,
@@ -1737,7 +1736,7 @@ export default function SocialMediaMessage() {
       code: `CH`,
       dial_code: `+41`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_ch.png`
+      flagImg: `flag_ch.png`,
     },
     {
       name: `Syrian Arab Republic`,
@@ -1745,7 +1744,7 @@ export default function SocialMediaMessage() {
       code: `SY`,
       dial_code: `+963`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_sy.png`
+      flagImg: `flag_sy.png`,
     },
     {
       name: `Taiwan`,
@@ -1753,7 +1752,7 @@ export default function SocialMediaMessage() {
       code: `TW`,
       dial_code: `+886`,
       timezone: `GMT+08:00`,
-      flagImg: `flag_tw.png`
+      flagImg: `flag_tw.png`,
     },
     {
       name: `Tajikistan`,
@@ -1761,7 +1760,7 @@ export default function SocialMediaMessage() {
       code: `TJ`,
       dial_code: `+992`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_tj.png`
+      flagImg: `flag_tj.png`,
     },
     {
       name: `Tanzania, United Republic of`,
@@ -1769,7 +1768,7 @@ export default function SocialMediaMessage() {
       code: `TZ`,
       dial_code: `+255`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_tz.png`
+      flagImg: `flag_tz.png`,
     },
     {
       name: `Thailand`,
@@ -1777,7 +1776,7 @@ export default function SocialMediaMessage() {
       code: `TH`,
       dial_code: `+66`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_th.png`
+      flagImg: `flag_th.png`,
     },
     {
       name: `Timor-Leste`,
@@ -1785,7 +1784,7 @@ export default function SocialMediaMessage() {
       code: `TL`,
       dial_code: `+670`,
       timezone: `GMT+09:00`,
-      flagImg: `flag_tl.png`
+      flagImg: `flag_tl.png`,
     },
     {
       name: `Togo`,
@@ -1793,7 +1792,7 @@ export default function SocialMediaMessage() {
       code: `TG`,
       dial_code: `+228`,
       timezone: `GMT`,
-      flagImg: `flag_tg.png`
+      flagImg: `flag_tg.png`,
     },
     {
       name: `Tokelau`,
@@ -1801,7 +1800,7 @@ export default function SocialMediaMessage() {
       code: `TK`,
       dial_code: `+690`,
       timezone: `GMT+13:00`,
-      flagImg: `flag_tk.png`
+      flagImg: `flag_tk.png`,
     },
     {
       name: `Tonga`,
@@ -1809,7 +1808,7 @@ export default function SocialMediaMessage() {
       code: `TO`,
       dial_code: `+676`,
       timezone: `GMT+13:00`,
-      flagImg: `flag_to.png`
+      flagImg: `flag_to.png`,
     },
     {
       name: `Trinidad and Tobago`,
@@ -1817,7 +1816,7 @@ export default function SocialMediaMessage() {
       code: `TT`,
       dial_code: `+1868`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_tt.png`
+      flagImg: `flag_tt.png`,
     },
     {
       name: `Tunisia`,
@@ -1825,7 +1824,7 @@ export default function SocialMediaMessage() {
       code: `TN`,
       dial_code: `+216`,
       timezone: `GMT+01:00`,
-      flagImg: `flag_tn.png`
+      flagImg: `flag_tn.png`,
     },
     {
       name: `Turkey`,
@@ -1833,7 +1832,7 @@ export default function SocialMediaMessage() {
       code: `TR`,
       dial_code: `+90`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_tr.png`
+      flagImg: `flag_tr.png`,
     },
     {
       name: `Turkmenistan`,
@@ -1841,7 +1840,7 @@ export default function SocialMediaMessage() {
       code: `TM`,
       dial_code: `+993`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_tm.png`
+      flagImg: `flag_tm.png`,
     },
     {
       name: `Turks and Caicos Islands`,
@@ -1849,7 +1848,7 @@ export default function SocialMediaMessage() {
       code: `TC`,
       dial_code: `+1649`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_tc.png`
+      flagImg: `flag_tc.png`,
     },
     {
       name: `Tuvalu`,
@@ -1857,7 +1856,7 @@ export default function SocialMediaMessage() {
       code: `TV`,
       dial_code: `+688`,
       timezone: `GMT+12:00`,
-      flagImg: `flag_tv.png`
+      flagImg: `flag_tv.png`,
     },
     {
       name: `Uganda`,
@@ -1865,7 +1864,7 @@ export default function SocialMediaMessage() {
       code: `UG`,
       dial_code: `+256`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_ug.png`
+      flagImg: `flag_ug.png`,
     },
     {
       name: `Ukraine`,
@@ -1873,7 +1872,7 @@ export default function SocialMediaMessage() {
       code: `UA`,
       dial_code: `+380`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_ua.png`
+      flagImg: `flag_ua.png`,
     },
     {
       name: `United Arab Emirates`,
@@ -1881,7 +1880,7 @@ export default function SocialMediaMessage() {
       code: `AE`,
       dial_code: `+971`,
       timezone: `GMT+04`,
-      flagImg: `flag_ae.png`
+      flagImg: `flag_ae.png`,
     },
     {
       name: `United Kingdom of Great Britain and Northern Ireland`,
@@ -1889,7 +1888,7 @@ export default function SocialMediaMessage() {
       code: `GB`,
       dial_code: `+44`,
       timezone: `GMT-08:00`,
-      flagImg: `flag_gb.png`
+      flagImg: `flag_gb.png`,
     },
     {
       name: `United States of America`,
@@ -1897,7 +1896,7 @@ export default function SocialMediaMessage() {
       code: `US`,
       dial_code: `+1`,
       timezone: `GMT-12:00`,
-      flagImg: `flag_us.png`
+      flagImg: `flag_us.png`,
     },
     {
       name: `Uruguay`,
@@ -1905,7 +1904,7 @@ export default function SocialMediaMessage() {
       code: `UY`,
       dial_code: `+598`,
       timezone: `GMT-03:00`,
-      flagImg: `flag_uy.png`
+      flagImg: `flag_uy.png`,
     },
     {
       name: `Uzbekistan`,
@@ -1913,7 +1912,7 @@ export default function SocialMediaMessage() {
       code: `UZ`,
       dial_code: `+998`,
       timezone: `GMT+05:00`,
-      flagImg: `flag_uz.png`
+      flagImg: `flag_uz.png`,
     },
     {
       name: `Vanuatu`,
@@ -1921,7 +1920,7 @@ export default function SocialMediaMessage() {
       code: `VU`,
       dial_code: `+678`,
       timezone: `GMT+11:00`,
-      flagImg: `flag_vu.png`
+      flagImg: `flag_vu.png`,
     },
     {
       name: `Venezuela (Bolivarian Republic of)`,
@@ -1929,7 +1928,7 @@ export default function SocialMediaMessage() {
       code: `VE`,
       dial_code: `+58`,
       timezone: `GMT-04:00`,
-      flagImg: `flag_ve.png`
+      flagImg: `flag_ve.png`,
     },
     {
       name: `Viet Nam`,
@@ -1937,7 +1936,7 @@ export default function SocialMediaMessage() {
       code: `VN`,
       dial_code: `+84`,
       timezone: `GMT+07:00`,
-      flagImg: `flag_vn.png`
+      flagImg: `flag_vn.png`,
     },
     {
       name: `Wallis and Futuna`,
@@ -1945,7 +1944,7 @@ export default function SocialMediaMessage() {
       code: `WF`,
       dial_code: `+681`,
       timezone: `GMT+12:00`,
-      flagImg: `flag_wf.png`
+      flagImg: `flag_wf.png`,
     },
     {
       name: `Western Sahara`,
@@ -1953,7 +1952,7 @@ export default function SocialMediaMessage() {
       code: `EH`,
       dial_code: `+212`,
       timezone: `GMT+00:00`,
-      flagImg: `flag_eh.png`
+      flagImg: `flag_eh.png`,
     },
     {
       name: `Yemen`,
@@ -1961,7 +1960,7 @@ export default function SocialMediaMessage() {
       code: `YE`,
       dial_code: `+967`,
       timezone: `GMT+03:00`,
-      flagImg: `flag_ye.png`
+      flagImg: `flag_ye.png`,
     },
     {
       name: `Zambia`,
@@ -1969,7 +1968,7 @@ export default function SocialMediaMessage() {
       code: `ZM`,
       dial_code: `+260`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_zm.png`
+      flagImg: `flag_zm.png`,
     },
     {
       name: `Zimbabwe`,
@@ -1977,46 +1976,83 @@ export default function SocialMediaMessage() {
       code: `ZW`,
       dial_code: `+263`,
       timezone: `GMT+02:00`,
-      flagImg: `flag_zw.png`
-    }
+      flagImg: `flag_zw.png`,
+    },
   ];
 
   const buttonClicked = () => {
     if (phoneNumber.length >= 10) {
-      setHref(`https://api.whatsapp.com/send?phone=` + dialCode.split('+')[1] + phoneNumber);
-    }
-    else {
+      setHref(
+        `https://api.whatsapp.com/send?phone=` +
+          dialCode.split("+")[1] +
+          phoneNumber
+      );
+    } else {
       setErrMsg(true);
     }
-  }
+  };
   return (
-    <div className='max-w-[1240px] mx-auto flex flex-col items-center p-4 h-full'>
-      <img className='mb-4 w-1/5 box-border' src={whatsappLogo} height={100} width={100} />
+    <div className="max-w-[1240px] mx-auto flex flex-col items-center p-4 h-full">
+      <img
+        className="mb-4 w-1/5 box-border"
+        src={whatsappLogo}
+        height={100}
+        width={100}
+      />
 
-      <p className='mb-[10px] text-center'>Send a WhatsApp direct without adding to your contact list</p>
-      <div className='flex flex-col items-center md:items-start md:flex-row w-full justify-center gap-[10px]'>
-        <select id="countryCodeOptions" onChange={(e) => setDialCode(e.target.value)} className="sm:w-[90%] md:max-w-[8%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <p className="mb-[10px] text-center">
+        Send a WhatsApp direct without adding to your contact list
+      </p>
+      <div className="flex flex-col items-center md:items-start md:flex-row w-full justify-center gap-[10px]">
+        <select
+          id="countryCodeOptions"
+          onChange={(e) => setDialCode(e.target.value)}
+          className="sm:w-[90%] md:max-w-[8%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+        >
           {countryData.map((item, index) => {
             return (
-              <option key={index} value={item.dial_code} >{item.name + " " + item.dial_code}</option>)
+              <option key={index} value={item.dial_code}>
+                {item.name + " " + item.dial_code}
+              </option>
+            );
           })}
         </select>
-        <div className='w-full sm:w-[90%] md:w-[30%]'>
-          <input type="number" id="first_name" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ${errMsg ? `border-red-300` : ``}`} placeholder="Enter The Phone Number Here!" required />
-          {errMsg ? <span className="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
-            Please enter a valid phone number!
-          </span> : null}
+        <div className="w-full sm:w-[90%] md:w-[30%]">
+          <input
+            type="number"
+            id="first_name"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5   ${
+              errMsg ? `border-red-300` : ``
+            }`}
+            placeholder="Enter The Phone Number Here!"
+            required
+          />
+          {errMsg ? (
+            <span className="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+              Please enter a valid phone number!
+            </span>
+          ) : null}
         </div>
       </div>
 
       <a href={href}>
-        <button type="button" className="mt-[10px] text-white bg-[#25D366] hover:bg-[#14212b] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick={() => { buttonClicked() }}>Message</button>
+        <button
+          type="button"
+          className="mt-[10px] text-white bg-[#25D366] hover:bg-[#14212b] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  focus:outline-none "
+          onClick={() => {
+            buttonClicked();
+          }}
+        >
+          Message
+        </button>
       </a>
-      <p className='mt-[10px] max-w-[90%] text-center'>
-        Just fill in the phone number you want to WhatsApp.
-        No login or registration on this website needed. You do need an active WhatsApp account.
-        This website does not use cookies and is very privacy friendly.</p>
-
+      <p className="mt-[10px] max-w-[90%] text-center">
+        Just fill in the phone number you want to WhatsApp. No login or
+        registration on this website needed. You do need an active WhatsApp
+        account. This website does not use cookies and is very privacy friendly.
+      </p>
     </div>
-  )
+  );
 }
